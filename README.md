@@ -1,4 +1,4 @@
-### 🎁 Amigo Secreto
+# 🎁 Amigo Secreto
 Este es un juego sencillo de Amigo Secreto desarrollado con HTML, CSS y JavaScript, que permite agregar amigos a una lista, asegurando que los nombres sean válidos (sin números ni duplicados) y luego seleccionar aleatoriamente uno como el “amigo secreto”.
 ![Interfaz del juego](./images/interfaz.png)
 Link del juego: https://anyseyer.github.io/Amigo-secreto/
@@ -50,3 +50,4 @@ Link del juego: https://anyseyer.github.io/Amigo-secreto/
 
 
 **Alura LATAM:** Plataforma de educación tecnológica que brinda contenido de calidad y desafíos prácticos.
+
