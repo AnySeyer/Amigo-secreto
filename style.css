@@ -1,0 +1,288 @@
+:root {
+    --color-primary: #000000;
+    --color-secondary: #ddf4ff;
+    --color-tertiary: #049e63;
+    --color-button: #fe2b2b;
+    --color-button-hover: #d7673f;
+    --color--button-hove: #2167f3;
+    --color-text: #020910;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #080c22 0%, #1a2744 50%, #791299 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg width="100%" height="100%" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.03" font-family="monospace" font-size="12"><text x="100" y="50">01001101</text><text x="300" y="80">11010011</text><text x="500" y="110">00110101</text><text x="700" y="140">10101010</text><text x="900" y="170">01110001</text><text x="200" y="220">11001100</text><text x="400" y="250">00111000</text><text x="600" y="280">10011001</text><text x="800" y="310">01010101</text><text x="150" y="360">11100011</text><text x="350" y="390">00101010</text><text x="550" y="420">10110110</text><text x="750" y="450">01001001</text><text x="950" y="480">11010110</text><text x="250" y="530">00110011</text><text x="450" y="560">10101100</text><text x="650" y="590">01110111</text><text x="850" y="620">11001001</text><text x="50" y="670">00101110</text><text x="450" y="700">10011010</text><text x="750" y="730">01100110</text></g></g></svg>') no-repeat center center;
+    background-size: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.main-content {
+    background: rgba(255, 254, 254, 0.989);
+    backdrop-filter: blur(15px);
+    border-radius: 24px;
+    padding: 30px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+}
+
+
+/* Banner */
+.header-banner {
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-banner img {
+    width: 110px;
+    height: 110px;
+    border-radius: 12px;
+    margin-bottom: 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Sección de entrada */
+.input-section {
+    background-color: transparent;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 34px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--color-primary);
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-container {
+    width: 400px;
+    justify-content: center;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    background-color: #21d5c0;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-add {
+    background-color: var(--color--button-hove);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #e30303;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+/* Animación para los elementos de la lista */
+ul li {
+    background: #fff6f5;
+    margin: 6px 0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border-left: 3px solid var(--color-button);
+    animation: fadeInUp 0.3s ease;  /* Animación al aparecer */
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #20a115;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botón de sortear título */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+
+}
+
+.button-container button {
+    flex: 1;
+    /* para que ambos botones ocupen espacio proporcional */
+    padding: 12px 16px;
+    font-size: 15px;
+
+
+}
+
+.button-draw img {
+    margin-right: 40px;
+
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(4, 158, 99, 0.3);
+}
+
+.button-reset:hover {
+    background-color: var(--color-button-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(254, 43, 43, 0.3);
+    cursor: pointer;
+    /* Cambia el cursor a mano */
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 24px;
+        margin: 10px;
+    }
+
+    .main-title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-title {
+        border-radius: 12px;
+        border-right: 2px solid #e1e5e9;
+        width: 100%;
+    }
+
+    .button-add {
+        border-radius: 12px;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button-container button {
+        width: 100%;
+    }
+
+    .header-banner img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 480px) {
+    .main-content {
+        padding: 20px;
+    }
+
+    .main-title {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 14px;
+    }
+}
